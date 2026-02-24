@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestRunner-Firefox(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="com.comcast.crm.orgtestConfig.CreateOrganisationTest">
+        <methods>
+          <include name="configAfterClass"/>
+          <include name="createOrgWithPhoneNo"/>
+          <include name="configAfterSuite"/>
+          <include name="createOrgWithIndustries"/>
+          <include name="configBm"/>
+          <include name="configAM"/>
+          <include name="congigBeforeClass"/>
+          <include name="configBeforeSuite"/>
+        </methods>
+      </class> <!-- com.comcast.crm.orgtestConfig.CreateOrganisationTest -->
+      <class name="com.comcasr.crm.contacttestconfig.CreateContactTest">
+        <methods>
+          <include name="configAfterClass"/>
+          <include name="createContactTest"/>
+          <include name="createContactWithSupportDate"/>
+          <include name="configAfterSuite"/>
+          <include name="configBm"/>
+          <include name="configAM"/>
+          <include name="congigBeforeClass"/>
+          <include name="configBeforeSuite"/>
+        </methods>
+      </class> <!-- com.comcasr.crm.contacttestconfig.CreateContactTest -->
+    </classes>
+  </test> <!-- TestRunner-Firefox(failed) -->
+  <test thread-count="2" parallel="tests" name="TestRunner-chrome(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.comcast.crm.orgtestConfig.CreateOrganisationTest">
+        <methods>
+          <include name="configAfterClass"/>
+          <include name="createOrgWithPhoneNo"/>
+          <include name="configAfterSuite"/>
+          <include name="configBm"/>
+          <include name="configAM"/>
+          <include name="congigBeforeClass"/>
+          <include name="configBeforeSuite"/>
+        </methods>
+      </class> <!-- com.comcast.crm.orgtestConfig.CreateOrganisationTest -->
+    </classes>
+  </test> <!-- TestRunner-chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
