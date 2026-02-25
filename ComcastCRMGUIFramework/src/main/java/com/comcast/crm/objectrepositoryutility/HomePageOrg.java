@@ -10,6 +10,9 @@ public class HomePageOrg {
 	WebDriver driver;
 	@FindBy(linkText="Organizations")
 	WebElement orglink;
+	@FindBy(linkText="Leads")
+	WebElement leadlink;
+	
 	
 	@FindBy(linkText="Products")
 	WebElement productLink;
